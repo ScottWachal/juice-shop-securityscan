@@ -8,5 +8,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: mahi7000/Developer_Vulnerability_Scanner@v1.0.3
         with:
-          scan-path: './src'
+          scan-path: './frontend/src'
           fail-on-issues: true
