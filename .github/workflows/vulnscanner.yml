@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: mahi7000/DEVELOPER_VULNERABILITY_SCANNER@v1
+      - uses: mahi7000/Developer_Vulnerability_Scanner@v1.0.3
         with:
           scan-path: './src'
           fail-on-issues: true
