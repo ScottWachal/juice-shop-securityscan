@@ -1,0 +1,12 @@
+name: Security Scan
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mahi7000/DEVELOPER_VULNERABILITY_SCANNER@v1
+        with:
+          scan-path: './src'
+          fail-on-issues: true
